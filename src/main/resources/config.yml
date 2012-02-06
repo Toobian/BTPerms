@@ -1,0 +1,10 @@
+default_group: default
+store: SQLStore
+sql:
+  hostname: localhost
+  port: 3306
+  database: permissions
+  username: btc
+  password: passbtc
+  #use view if you custom attribution for groups. Like CMS, Forum import
+  use_view: false
