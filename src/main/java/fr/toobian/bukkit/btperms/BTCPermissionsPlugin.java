@@ -1,9 +1,9 @@
-package fr.toobian.bukkit.btcpermissions;
+package fr.toobian.bukkit.btperms;
 
-import fr.toobian.bukkit.btcpermissions.io.SQLStore;
-import fr.toobian.bukkit.btcpermissions.io.Store;
-import fr.toobian.bukkit.btcpermissions.io.YAMLStore;
-import fr.toobian.bukkit.btcpermissions.util.PermissionsPlayer;
+import fr.toobian.bukkit.btperms.io.SQLStore;
+import fr.toobian.bukkit.btperms.io.Store;
+import fr.toobian.bukkit.btperms.io.YAMLStore;
+import fr.toobian.bukkit.btperms.util.PermissionsPlayer;
 import java.util.HashMap;
 import java.util.logging.Logger;
 import org.bukkit.command.CommandExecutor;
