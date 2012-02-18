@@ -1,6 +1,6 @@
 package fr.toobian.bukkit.btperms.io;
 
-import fr.toobian.bukkit.btperms.BTCPermissionsPlugin;
+import fr.toobian.bukkit.btperms.BTPermsPlugin;
 import fr.toobian.bukkit.btperms.util.PermissionsEntity;
 import fr.toobian.bukkit.btperms.util.PermissionsGroup;
 import fr.toobian.bukkit.btperms.util.PermissionsPlayer;
@@ -15,11 +15,11 @@ import java.util.logging.Level;
  */
 public class SQLStore implements Store {
 
-    private BTCPermissionsPlugin plugin;
+    private BTPermsPlugin plugin;
     private Connection connection;
     private String hostname, port, database, username, password;
 
-    public SQLStore(BTCPermissionsPlugin plugin) {
+    public SQLStore(BTPermsPlugin plugin) {
         this.plugin = plugin;
         this.connection = null;
         hostname = plugin.getConfig().getString("sql.hostname");

@@ -18,7 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * 
  * @author Toobian <toobian@toobian.fr>
  */
-public class BTCPermissionsPlugin extends JavaPlugin {
+public class BTPermsPlugin extends JavaPlugin {
 
     private Listener playerListener;
     private CommandExecutor commandExecutor;
@@ -29,8 +29,8 @@ public class BTCPermissionsPlugin extends JavaPlugin {
     public Logger console;
 
     public void onEnable() {
-        playerListener = new BTCPermissionsPlayerListener(this);
-        commandExecutor = new BTCPermissionsCommand(this);
+        playerListener = new BTPermsPlayerListener(this);
+        commandExecutor = new BTPermsCommand(this);
         permissions = new HashMap<String, PermissionAttachment>();
         lastWorld = new HashMap<String, String>();
         console = this.getServer().getLogger();

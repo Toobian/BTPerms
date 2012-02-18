@@ -1,6 +1,6 @@
 package fr.toobian.bukkit.btperms.io;
 
-import fr.toobian.bukkit.btperms.BTCPermissionsPlugin;
+import fr.toobian.bukkit.btperms.BTPermsPlugin;
 import fr.toobian.bukkit.btperms.util.PermissionsEntity;
 import fr.toobian.bukkit.btperms.util.PermissionsGroup;
 import fr.toobian.bukkit.btperms.util.PermissionsPlayer;
@@ -21,11 +21,11 @@ import org.bukkit.configuration.file.YamlConfiguration;
  */
 public class YAMLStore implements Store {
 
-    private BTCPermissionsPlugin plugin;
+    private BTPermsPlugin plugin;
     private FileConfiguration customConfig = null;
     private File customConfigFile = null;
 
-    public YAMLStore(BTCPermissionsPlugin plugin) {
+    public YAMLStore(BTPermsPlugin plugin) {
         this.plugin = plugin;
         this.customConfigFile = new File(plugin.getDataFolder(), "permissions.yml");
         customConfig = YamlConfiguration.loadConfiguration(customConfigFile);

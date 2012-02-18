@@ -1,6 +1,6 @@
 package fr.toobian.bukkit.btperms.util;
 
-import fr.toobian.bukkit.btperms.BTCPermissionsPlugin;
+import fr.toobian.bukkit.btperms.BTPermsPlugin;
 import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Map;
@@ -16,7 +16,7 @@ public class PermissionsPlayer extends PermissionsEntity implements Serializable
         super(player);
     }
     
-    public static PermissionsPlayer createNewPlayer(BTCPermissionsPlugin plugin, String player) {
+    public static PermissionsPlayer createNewPlayer(BTPermsPlugin plugin, String player) {
         PermissionsPlayer pp = new PermissionsPlayer(player);
         
         PermissionsGroup groupPermissions = plugin.store.getGroupPermissions(plugin.getConfig().getString("default_group"));

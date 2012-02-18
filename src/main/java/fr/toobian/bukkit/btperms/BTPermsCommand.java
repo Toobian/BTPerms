@@ -17,11 +17,11 @@ import org.bukkit.permissions.PermissionAttachmentInfo;
  *
  * @author Toobian <toobian@toobian.fr>
  */
-class BTCPermissionsCommand implements CommandExecutor {
+class BTPermsCommand implements CommandExecutor {
 
-    private BTCPermissionsPlugin plugin;
+    private BTPermsPlugin plugin;
 
-    public BTCPermissionsCommand(BTCPermissionsPlugin plugin) {
+    public BTPermsCommand(BTPermsPlugin plugin) {
         this.plugin = plugin;
     }
 

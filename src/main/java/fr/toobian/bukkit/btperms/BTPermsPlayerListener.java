@@ -9,11 +9,11 @@ import org.bukkit.event.player.*;
  *
  * @author Toobian <toobian@toobian.fr>
  */
-class BTCPermissionsPlayerListener implements Listener{
+class BTPermsPlayerListener implements Listener{
     
-    private BTCPermissionsPlugin plugin;
+    private BTPermsPlugin plugin;
 
-    public BTCPermissionsPlayerListener(BTCPermissionsPlugin plugin) {
+    public BTPermsPlayerListener(BTPermsPlugin plugin) {
         this.plugin = plugin;
     }
     
